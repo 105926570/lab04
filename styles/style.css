@@ -31,5 +31,19 @@ h1 {
 
 /*CSS has a universal element selector star  *  that selects all elements.*/
 
-* { font-family: calibri, sans-serif; }
+* { font-family: calibri, sans-serif; } 
 * { color: #2F4F4F}
+
+h2 {
+    color: rgb(0,128,128);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*makes footer and aside classes italic*/
+aside, footer { font-style: italic; }
+
+/* sets font so arial or sans serrif if one or the other isnt avalib;e*/
+h1, h2, h3 { 
+    font-family: arial, sans-serif;
+}
