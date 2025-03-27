@@ -47,3 +47,11 @@ aside, footer { font-style: italic; }
 h1, h2, h3 { 
     font-family: arial, sans-serif;
 }
+
+table {
+    border: 1px solid black;
+}
+
+#images {
+    text-align : center;  /* careful: center has US spelling */
+    }
