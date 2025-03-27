@@ -12,8 +12,23 @@ description: [lab04.html]
 
 */
 
+/*--------------------------------------------------------------*/
+
+/*
+CSS style rules have the form:
+
+selector { 
+    property1: value1; 
+    property2: value2;
+}
+*/
+
 h1 { 
     color: purple;
     font-size: 2em;
     font-weight: bold;
 }
+
+/*CSS has a universal element selector star  *  that selects all elements.*/
+
+* { font-family: calibri, sans-serif; }
