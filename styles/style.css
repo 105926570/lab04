@@ -1,57 +1,89 @@
 /*
 
-filename: [style.css]
+filename: lab04.css
 
-author: [Thomas Federico]
+author: Thomas Federico
 
-created: [28/03/2025]
+created: 28/03/2025
 
-last modified: [28/03/2025]
+last modified: 28/03/2025
 
-description: [lab04.html]
+description: lab04.html
 
 */
 
 /*--------------------------------------------------------------*/
 
-/*
-CSS style rules have the form:
-
-selector { 
-    property1: value1; 
-    property2: value2;
+/* Universal element selector to set default font family */
+* { 
+    font-family: calibri, sans-serif;
+    color: #2F4F4F; /* Set default text color to #2F4F4F */
 }
-*/
 
+/* Heading 1 (h1) styling */
 h1 { 
     color: purple;
     font-size: 2em;
     font-weight: bold;
 }
 
-/*CSS has a universal element selector star  *  that selects all elements.*/
-
-* { font-family: calibri, sans-serif; } 
-* { color: #2F4F4F}
-
+/* Heading 2 (h2) styling */
 h2 {
-    color: rgb(0,128,128);
-    font-size: 1.5em;
+    color: rgb(0,128,128); /* Set color to RGB (0,128,128) */
+    font-size: 1.5em; /* 1.5 times the standard size */
     font-weight: bold;
 }
 
-/*makes footer and aside classes italic*/
-aside, footer { font-style: italic; }
+/* Italicize <aside> and <footer> text */
+aside, footer { 
+    font-style: italic; 
+}
 
-/* sets font so arial or sans serrif if one or the other isnt avalib;e*/
+/* Set font family for h1, h2, h3 to Arial or sans-serif */
 h1, h2, h3 { 
     font-family: arial, sans-serif;
 }
 
+/* Add border to the table */
 table {
     border: 1px solid black;
 }
 
+/* Center align the <h2> with id="images" */
 #images {
-    text-align : center;  /* careful: center has US spelling */
-    }
+    text-align: center;
+}
+
+/* Make the <h3> with id="heading3zingus" red */
+#heading3zingus {
+    color: red;
+}
+
+/* Style for elements with class "special" */
+.special {
+    color: darkorange;
+    font-weight: bold;
+}
+
+/* Add style for menu links (<nav>) */
+nav a {
+    text-decoration: none; /* Remove underline */
+    padding: 0.2em 0.6em; /* Add padding around menu items */
+    border: 4px solid #ccc; /* Add border around menu items */
+}
+
+/* Add hover effect for <nav> links (change background and border) */
+nav a:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+}
+
+/* Group selector for making <ul> in an <ol> have square bullet points */
+ol ul {
+    list-style-type: square;
+}
+
+/* Hide <aside> element when hovered */
+aside:hover {
+    display: none;
+}
